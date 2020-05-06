@@ -1,24 +1,11 @@
 import React from "react";
 import styles from "./searchBar.module.css";
 
-// class Searchbar extends Component {
-  // state = {
-  //   // query: "",
-  // };
-
-  // handleChange = (e) => {
-  //   this.setState({
-  //     query: e.target.value,
-  //   });
-  // };
 
  const handleSubmit = (e, fetchImages) => {
     e.preventDefault();
-    // this.props.onSubmit();
-    fetchImages()
-    // this.setState({
-    //   query: "",
-    // });
+    fetchImages();
+    
   };
 
 const Searchbar = ({fetchImages, query, handleQueryChange }) => (

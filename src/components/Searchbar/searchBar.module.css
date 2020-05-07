@@ -18,11 +18,18 @@
       0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   }
 
+  .SearchForm {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
   .SearchFormButton {
     display: inline-block;
-    position: absolute;
-    top: 32px;
-    left: 376px;
     width: 30px;
     height: 24px;
     border: 0;

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./modal.module.css";
+import PropTypes from "prop-types";
 
 const Modal = ({ largeImageURL, onClose }) => (
   <div className={styles.Overlay} onClick={onClose} role="presentation">
@@ -10,3 +11,8 @@ const Modal = ({ largeImageURL, onClose }) => (
 );
 
 export default Modal;
+
+Modal.propTypes = {
+  largeImageURL: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
